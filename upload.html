@@ -4,6 +4,7 @@
     <title>Upload</title>
     <link rel="stylesheet" href="css/upload.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="default/nav.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
@@ -37,6 +38,34 @@
         </nav>
     </header>
 
+    <main>
+        <section id="upload-photo">
+            <input type="file">
+        </section>
+
+        <section id="container">
+            <article id="item-title">
+                <label for="product-name">상품 이름</label>
+                <input type="text" id="product-name">
+            </article>
+            <article id="item-class">
+                <label for="product-list">상품 분류</label>
+                <p>
+                    <input type="button" id="product-class" value="라켓">
+                    <input type="button" id="product-class" value="볼">
+                    <input type="button" id="product-class" value="의류">
+                    <input type="button" id="product-class" value="잡화">
+                </p>
+            </article>
+            <article id="item-explain">
+                <label for="product-explain">상품 설명</label>
+                <textarea id="product-explain" cols="30" rows="10"></textarea>
+            </article>
+        </section>
+
+        <button id="registration">등록하기</button>
+    </main>
+
     <footer>
         <div class="bottom-nav-personal">
             <i class="bi bi-search"></i>
@@ -64,6 +93,8 @@
             toggleI.classList.toggle('bi-list')
             toggleI.classList.toggle('bi-x-lg')
         }
+
+       
 
     </script>
 </body>
