@@ -99,6 +99,10 @@ main > .item-container {
     width: 100%;
 }
 
+.items > p {
+    display: none;
+}
+
 .item {
     margin-top: 12px;
 }
