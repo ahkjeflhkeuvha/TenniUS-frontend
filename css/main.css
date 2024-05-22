@@ -25,6 +25,8 @@
     --small-font-size : 0.8rem;
     --smaller-font-size : 0.6rem;
 
+    --small-margin : 16px;
+
 }
 
 /* nav css */
@@ -126,6 +128,58 @@ footer {
     display: none;
 }
 
+.explain {
+    background-color: pink;
+    z-index: 100;
+}
+
+.pop_wrap{
+    position:fixed;
+    top:0; left:0; right:0; bottom:0;
+    background:rgba(0,0,0,.5);
+    font-size:0; 
+    text-align:center;
+}
+.pop_wrap:after{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle; 
+    content:'';
+}
+.pop_wrap .pop_inner{
+    display:inline-block;
+    padding:20px 30px;
+    background:#fff;
+    width:50%; 
+    vertical-align:middle; 
+    font-size:15px;
+    border-radius: 20px;
+}
+
+.pop_wrap button {
+    border: 0;
+    width: 40%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 20px;
+    font-size: var(--normal-font-size);
+}
+
+.pop_inner > h2 {
+    font-size: var(--h2-font-size);
+    margin-top: var(--small-margin);
+}
+
+.pop_inner > h3 {
+    font-size: var(--h3-font-size);
+    margin-top: var(--small-margin);
+}
+
+.pop_inner > p {
+    font-size: var(--normal-font-size);
+    margin-top: var(--small-margin);
+}
+
 @media screen and (max-width:1194px) {
     .nav {
         padding: 0 5%;
@@ -175,7 +229,7 @@ footer {
         justify-content: center;
     }
     
-    .items > img {
+    .items img {
         display: flex;
         width: 80%;
         margin: auto;
