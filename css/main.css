@@ -92,7 +92,8 @@ nav {
 }
 
 main {
-    position: absolute;
+    min-height: 100%;
+    position: relative;
     margin: 0;
     margin-top: var(--nav-height);
     width: 100%;
@@ -277,7 +278,7 @@ footer {
 
     footer {
         position: absolute;
-        top: 95%;
+        bottom: 0;
 
         position: fixed;
         z-index: 100;
@@ -293,15 +294,19 @@ footer {
         box-shadow: 1px 0px 16px rgb(203, 203, 203);
     }
 
-    .bottom-nav-personal {
+    footer > div {
         display: flex;
         flex-direction: column;
-
-        align-items: center;
         justify-content: center;
+        align-items: center;
     }
 
-    .bottom-nav-personal>p {
+    footer a {
+        color: black;
+        text-align: center;
+    }
+
+    .bottom-nav-personal p {
         margin-top: 2px;
         font-size: var(--smaller-font-size);
     }
