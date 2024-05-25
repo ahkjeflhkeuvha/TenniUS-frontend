@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: inherit;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 :root {
@@ -34,17 +36,8 @@
 
 /* nav css */
 
-html {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    width: 100%;
-    height: 100%;
-}
-
 body>header {
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
@@ -53,8 +46,6 @@ body>header {
     position: fixed;
     /* z-index: 100; */
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 nav {
@@ -92,6 +83,7 @@ nav {
 }
 
 main {
+    min-height: 100%;
     position: absolute;
     margin: 0;
     margin-top: var(--nav-height);
@@ -106,7 +98,6 @@ main>.item-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    z-index: -1;
 
 }
 
@@ -276,10 +267,8 @@ footer {
     }
 
     footer {
-        position: absolute;
-        top: 95%;
-
         position: fixed;
+        top: calc(834px - 44px);
         z-index: 100;
 
         width: 100%;
@@ -293,15 +282,19 @@ footer {
         box-shadow: 1px 0px 16px rgb(203, 203, 203);
     }
 
-    .bottom-nav-personal {
+    footer > div {
         display: flex;
         flex-direction: column;
-
-        align-items: center;
         justify-content: center;
+        align-items: center;
     }
 
-    .bottom-nav-personal>p {
+    footer a {
+        color: black;
+        text-align: center;
+    }
+
+    .bottom-nav-personal p {
         margin-top: 2px;
         font-size: var(--smaller-font-size);
     }
@@ -343,5 +336,8 @@ footer {
     .pop_inner > button {
         align-self: center;
         width: 100%;
+    }
+    footer {
+        top: calc(844px - 43px);
     }
 }
