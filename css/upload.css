@@ -158,6 +158,9 @@ button {
 }
 
 @media screen and (max-width: 1194px) {
+    .btn-upload {
+        font-size: 20px;
+    }
     section {
         font-size: var(--small-font-size);
     }
@@ -170,4 +173,11 @@ button {
         padding: 20px 20px 20px 0;
     }
 
+    input {
+        font-size: var(--small-font-size);
+    }
+
+    button {
+        font-size: var(--small-font-size);
+    }
 }
