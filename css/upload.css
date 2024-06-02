@@ -135,6 +135,69 @@ label {
     display: none;
   }
 
-@media screen and (max-width:1194px) {
-    
+  @media screen and (max-width: 1194px) {
+    .nav {
+        padding: 0 5%;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    .nav-list {
+        position: absolute;
+        top: calc(var(--nav-height) - 163.2px);
+        right: 0;
+        left: 0;
+        z-index: -1;
+        background-color: hsla(72, 100%, 50%, 0.6);
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        backdrop-filter: blur(8px);
+    }
+    .nav-item {
+        padding: 10px 0;
+        border-bottom: 2px solid white;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-link {
+        display: block;
+    }
+    #search {
+        display: none;
+    }
+    #person-circle {
+        display: none;
+    }
+    .show-menu {
+        top: var(--nav-height);
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+
+        width: 100%;
+        height: var(--nav-height);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--first-color);
+        box-shadow: 1px 0px 16px rgb(203, 203, 203);
+    }
+    footer > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer a {
+        color: black;
+        text-align: center;
+    }
+    .bottom-nav-personal p {
+        margin-top: 2px;
+        font-size: var(--smaller-font-size);
+    }
 }

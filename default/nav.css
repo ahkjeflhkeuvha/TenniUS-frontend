@@ -136,7 +136,7 @@ footer {
 
     footer {
         position: fixed;
-        top: calc(834px - 44px);
+        bottom: 0;
         z-index: 100;
 
         width: 100%;
