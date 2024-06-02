@@ -1,0 +1,150 @@
+#menu {
+    margin-top: 91px;
+    width: 1440px;
+    height: 70px;
+    border-bottom: 2px solid black;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    column-gap: 930px;
+    padding-bottom: 10px;
+    margin-bottom: 86px;
+}
+
+#Shopping-Cart {
+    color: #000;
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+button {
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+
+    width: 1350px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #495B00;
+    background: #FFF;
+
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 25px;
+}
+
+.explain-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.explain-container>p:last-child {
+    margin-top: 12%;
+}
+
+.item-title {
+    color: #000;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.name {
+    color: #292929;
+    font-family: Inter;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.price {
+    color: #000;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#product-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #00B2FF;
+    background: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1.5px solid #787878;
+    background: #D9D9D9;
+    margin-left: 30px;
+}
+
+.purchase-bnt {
+    width: 230px;
+    height: 57px;
+
+    border-radius: 10px;
+    border: 3px solid #CF0;
+    background: #F4FCFF;
+
+    color: #B6E400;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.delete-bnt {
+    width: 230px;
+    height: 56.889px;
+    border-radius: 10px;
+    border: 3px solid #8AA227;
+    background: #F4FCFF;
+
+    color: #8AA227;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
