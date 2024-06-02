@@ -148,3 +148,162 @@ input {
     font-weight: 700;
     line-height: normal;
 }
+
+@media screen and (max-width: 1194px) {
+    #menu {
+        margin-top: 72px;
+        width: 1191px;
+        height: 70px;
+        border-bottom: 2px solid black;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        column-gap: 760px;
+        padding-bottom: 10px;
+        margin-bottom: 70px;
+    }
+
+    #Shopping-Cart {
+        width: 170px;
+        height: 29px;
+        color: #000;
+        font-family: Inter;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    button {
+        background-image: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .container {
+
+        width: 1120px;
+        height: 250px;
+        border-radius: 10px;
+        border: 1px solid #495B00;
+        background: #FFF;
+
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+
+    .explain-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .explain-container>p:last-child {
+        margin-top: 10%;
+    }
+
+    .item-title {
+        color: #000;
+        font-family: Inter;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .name {
+        color: #292929;
+        font-family: Inter;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .price {
+        color: #000;
+        font-family: Inter;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #product-image {
+        width: 248.873px;
+        height: 165.915px;
+        border-radius: 10px;
+        border: 1px solid #00B2FF;
+        background: #FFF;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input {
+        width: 21px;
+        height: 22px;
+        border-radius: 5px;
+        border: 1.5px solid #787878;
+        background: #D9D9D9;
+        margin-left: 30px;
+    }
+
+    .purchase-bnt {
+        width: 190.803px;
+        height: 47.286px;
+
+        border-radius: 10px;
+        border: 2.5px solid #CF0;
+        background: #F4FCFF;
+
+        color: #B6E400;
+        font-family: Inter;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .delete-bnt {
+        width: 190.803px;
+        height: 47.194px;
+        border-radius: 10px;
+        border: 2.5px solid #8AA227;
+        background: #F4FCFF;
+
+
+        color: #8AA227;
+        font-family: Inter;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+
+@media screen and (max-width: 391px) {
+    
+}
