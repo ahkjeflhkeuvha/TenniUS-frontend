@@ -63,8 +63,9 @@ section:first-child {
     background: #F5F5F7;
     border-radius: 50px;
 
-    border: 30px solid white;
-
+    border-left: 30px solid white;
+    border-right: 30px solid white;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,7 +79,7 @@ section:nth-child(2) {
 #container {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 30px 30px 0;
+    padding: 0px 30px 0 0;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -153,13 +154,19 @@ article:last-child > textarea{
 }
 
 button {
+    margin-top: 20px;
     margin-right: 30px;
-    width: 10%;
+    width: 15%;
     background-color: #F5F5F7;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04) inset;
     border: 0;
     height: 3.5%;
     border-radius: 8px;
+}
+
+label {
+    text-align: center;
+    margin-right: 10px;
 }
 
 @media screen and (max-width: 1194px) {
@@ -171,11 +178,12 @@ button {
     }
     section:first-child {
         border-radius: 25px;
-        border: 15px solid white;
+        border-left: 20px solid white;
+        border-right: 20px solid white;
     }
 
     #container {
-        padding: 20px 20px 20px 0;
+        padding: 0 20px 0 0;
     }
 
     article:first-child > input {
@@ -235,7 +243,6 @@ button {
         font-size: var(--smaller-font-size);
     }
     label {
-
         word-break: keep-all;
     }
 }
