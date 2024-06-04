@@ -1,3 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+:root {
+    /* color */
+    --back-color: #FAFAFC;
+    --first-color: #CCFF00;
+    --second-color: #B4E701;
+    --third-color: #00B2FF;
+
+    /* nav */
+    --nav-height: 44px;
+
+    /* z-index */
+    --z-index: 100;
+
+    /* font */
+    --h1-font-size: 2rem;
+    /* 크롬 > 설정 > 글자 크기 : 중간 (기본값)일 때, 대문자 M이 너비 = 1rem (16px)  */
+    --h2-font-size: 1.5rem;
+    /* 24px */
+    --h3-font-size: 1.25rem;
+    /* 20px */
+    --normal-font-size: 1rem;
+    --small-font-size: 0.8rem;
+    --smaller-font-size: 0.6rem;
+
+    --small-margin: 16px;
+
+}
+
+
+main {
+    min-height: 100%;
+    position: absolute;
+    margin: 0;
+    margin-top: var(--nav-height);
+
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+    align-content: center;
+}
+
 #menu {
     margin-top: 91px;
     width: 1440px;
@@ -345,24 +400,35 @@ input {
 @media screen and (max-width: 391px) {
     #menu {
         margin-top: 72px;
-        width: 390.004px;
+        width: 100%;
         height: 20px;
         border-bottom: 2px solid black;
 
         display: flex;
         justify-content: space-around;
         align-items: flex-end;
-        column-gap: 760px;
+        column-gap: 70px;
         padding-bottom: 10px;
-        margin-bottom: 70px;
+        margin-bottom: 58px;
     }
 
     #Shopping-Cart {
-        width: 70px;
+        width: 80px;
         height: 15px;
         color: #000;
         font-family: Inter;
         font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    #del {
+        width: 180px;
+        height: 11px;
+        color: #595959;
+        font-family: Inter;
+        font-size: 9px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -385,7 +451,7 @@ input {
 
     .container {
 
-        width: 345px;
+        width: 90%;
         height: 138px;
         border-radius: 10px;
         border: 1px solid #495B00;
@@ -396,14 +462,10 @@ input {
         column-gap: 40px;
         align-items: center;
         margin-bottom: 50px;
+
+        
     }
 
-    /* .btn-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        row-gap: 20px;
-    } */
 
     .explain-container {
         display: flex;
@@ -430,7 +492,7 @@ input {
     .name {
         color: #292929;
         font-family: Inter;
-        font-size: 22px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -439,22 +501,21 @@ input {
     .price {
         color: #000;
         font-family: Inter;
-        font-size: 23px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
     }
 
     #product-image {
-        width: 248.873px;
-        height: 165.915px;
-        border-radius: 10px;
-        border: 1px solid #00B2FF;
-        background: #FFF;
+        /* border: none; */
+        width: 200px;
+    }
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
+    .img-item {
+        width: 120px;
+        height: 120px;
     }
 
     input {
@@ -466,35 +527,24 @@ input {
         margin-left: 10px;
     }
 
-    /* .purchase-bnt {
-        width: 190.803px;
-        height: 47.286px;
+    .purchase-bnt {
+        width: 175px;
+        height: 26px;
 
-        border-radius: 10px;
-        border: 2.5px solid #CF0;
+        border-radius: 8px;
+        border: 1px solid #CF0;
         background: #F4FCFF;
 
         color: #B6E400;
+        text-align: center;
         font-family: Inter;
-        font-size: 25px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
     }
 
     .delete-bnt {
-        width: 190.803px;
-        height: 47.194px;
-        border-radius: 10px;
-        border: 2.5px solid #8AA227;
-        background: #F4FCFF;
-
-
-        color: #8AA227;
-        font-family: Inter;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    } */
+        display: none;
+    }
 }
