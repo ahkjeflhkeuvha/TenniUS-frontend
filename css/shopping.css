@@ -409,34 +409,36 @@ input {
         display: flex;
         justify-content: space-around;
         align-items: flex-end;
-        column-gap: 70px;
+        column-gap: 90px;
         padding-bottom: 10px;
         margin-bottom: 58px;
     }
 
     #Shopping-Cart {
-        width: 80px;
-        height: 15px;
+        width: 100px;
+        height: 17px;
         color: #000;
         font-family: Inter;
-        font-size: 12px;
+        font-size: 15px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
     }
 
     #del {
-        width: 180px;
+        width: 145px;
         height: 11px;
         color: #595959;
         font-family: Inter;
-        font-size: 9px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-    }
 
+        margin-bottom: 5px;
+    }
+    
     button {
+        font-size: 10px;
         background-image: none;
         background-color: transparent;
         border: none;
