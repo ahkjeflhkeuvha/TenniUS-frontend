@@ -1,3 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+:root {
+    /* color */
+    --back-color: #FAFAFC;
+    --first-color: #CCFF00;
+    --second-color: #B4E701;
+    --third-color: #00B2FF;
+
+    /* nav */
+    --nav-height: 44px;
+
+    /* z-index */
+    --z-index: 100;
+
+    /* font */
+    --h1-font-size: 2rem;
+    /* 크롬 > 설정 > 글자 크기 : 중간 (기본값)일 때, 대문자 M이 너비 = 1rem (16px)  */
+    --h2-font-size: 1.5rem;
+    /* 24px */
+    --h3-font-size: 1.25rem;
+    /* 20px */
+    --normal-font-size: 1rem;
+    --small-font-size: 0.8rem;
+    --smaller-font-size: 0.6rem;
+
+    --small-margin: 16px;
+
+}
+
+
+main {
+    min-height: 100%;
+    position: absolute;
+    margin: 0;
+    margin-top: var(--nav-height);
+
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+    align-content: center;
+}
+
 #menu {
     margin-top: 91px;
     width: 1440px;
@@ -261,6 +316,11 @@ input {
         justify-content: center;
     }
 
+    #img-item {
+        width: 194.95px;
+        height: 155.131px;
+    }
+
     input {
         width: 21px;
         height: 22px;
@@ -301,9 +361,190 @@ input {
         font-weight: 400;
         line-height: normal;
     }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+
+        width: 100%;
+        height: var(--nav-height);
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        background-color: var(--first-color);
+        box-shadow: 1px 0px 16px rgb(203, 203, 203);
+    }
+
+    footer>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer a {
+        color: black;
+        text-align: center;
+    }
+
+    .bottom-nav-personal p {
+        margin-top: 2px;
+        font-size: var(--smaller-font-size);
+    }
 }
 
 
 @media screen and (max-width: 391px) {
-    
+    #menu {
+        margin-top: 72px;
+        width: 100%;
+        height: 20px;
+        border-bottom: 2px solid black;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        column-gap: 70px;
+        padding-bottom: 10px;
+        margin-bottom: 58px;
+    }
+
+    #Shopping-Cart {
+        width: 80px;
+        height: 15px;
+        color: #000;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    #del {
+        width: 180px;
+        height: 11px;
+        color: #595959;
+        font-family: Inter;
+        font-size: 9px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    button {
+        background-image: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .container {
+
+        width: 90%;
+        height: 138px;
+        border-radius: 10px;
+        border: 1px solid #495B00;
+        background: #FFF;
+
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        align-items: center;
+        margin-bottom: 50px;
+
+        
+    }
+
+
+    .explain-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .explain-container>p:last-child {
+        margin-top: 10%;
+    }
+
+    .item-title {
+        width: 182px;
+        height: 36px;
+
+        color: #000;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .name {
+        color: #292929;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .price {
+        color: #000;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #product-image {
+        /* border: none; */
+        width: 200px;
+    }
+
+
+    .img-item {
+        width: 120px;
+        height: 120px;
+    }
+
+    input {
+        width: 15px;
+        height: 15px;
+        border-radius: 2.5px;
+        border: 1px solid #787878;
+        background: #D9D9D9;
+        margin-left: 10px;
+    }
+
+    .purchase-bnt {
+        width: 175px;
+        height: 26px;
+
+        border-radius: 8px;
+        border: 1px solid #CF0;
+        background: #F4FCFF;
+
+        color: #B6E400;
+        text-align: center;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .delete-bnt {
+        display: none;
+    }
 }
