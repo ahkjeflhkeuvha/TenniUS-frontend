@@ -339,7 +339,4 @@ footer {
         align-self: center;
         width: 100%;
     }
-    footer {
-        top: calc(844px - 43px);
-    }
 }
