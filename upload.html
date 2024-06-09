@@ -57,10 +57,10 @@
             <article id="item-class">
                 <label for="product-list">상품 분류</label>
                 <p>
-                    <input type="button" id="product-class" value="라켓">
-                    <input type="button" id="product-class" value="볼">
-                    <input type="button" id="product-class" value="의류">
-                    <input type="button" id="product-class" value="잡화">
+                    <input type="button" class="product-class" onclick="clickInputButton(0)" value="라켓">
+                    <input type="button" class="product-class" onclick="clickInputButton(1)" value="볼">
+                    <input type="button" class="product-class" onclick="clickInputButton(2)" value="의류">
+                    <input type="button" class="product-class" onclick="clickInputButton(3)" value="잡화">
                 </p>
             </article>
             <article id="item-explain">
@@ -69,7 +69,7 @@
             </article>
         </section>
 
-        <button id="registration">등록하기</button>
+        <button id="registration"><a href="uploadedPage.html">등록하기</a></button>
     </main>
 
     <footer>
@@ -104,8 +104,17 @@
             toggleI.classList.toggle('bi-x-lg')
         }
 
+        const inputButton = document.getElementsByClassName('product-class')
 
-
+        function clickInputButton(n){  
+            for(var i = 0; i<inputButton.length; i++){
+                inputButton[i].style.backgroundColor = '#FAFAFC'
+            }
+            
+            inputButton[n].style.backgroundColor = '#CCFF00'
+        }
+        
+        console.log(inputButton)
     </script>
 </body>
 
