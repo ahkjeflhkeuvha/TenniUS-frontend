@@ -271,3 +271,51 @@ footer {
         font-size: var(--smaller-font-size);
     }
 }
+
+@media screen and (max-width: 391px) {
+    #shopping-cart {
+        font-size: var(--h3-font-size);
+    }
+
+    .container {
+        flex-direction: row;
+        align-items: center; /* Align items vertically center */
+        flex-wrap: wrap;
+    }
+
+    .product-image {
+        margin-right: 16px; /* Add some space between image and text */
+    }
+
+    .img-item {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .explain-container {
+        width: 45vw;
+        row-gap: 0;
+    }
+
+    .item-title, .price, .btn-container > button {
+        font-size: calc(var(--h3-font-size) - 4px);
+        word-break: keep-all;
+    }   
+
+    .btn-container {
+        display: flex;
+        flex-direction: row; /* Keep buttons in a row */
+        column-gap: 8px;
+        width: 100%;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .purchase-bnt {
+        width: 50%;
+    }
+
+    .delete-bnt {
+        display: none;
+    }
+}
