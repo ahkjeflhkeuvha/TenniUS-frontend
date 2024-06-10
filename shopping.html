@@ -42,14 +42,14 @@
 
     <main>
         <div id="menu">
-            <p id="Shopping-Cart">장바구니 상품</p>
+            <p id="shopping-cart">장바구니 상품</p>
             <p id="del"><button>선택상품 삭제</button> | <button>거래완료 삭제</button></p>
         </div>
 
         <section class="menu-container">
             <article class="container">
                 <input type="checkbox">
-                <span id="product-image"><img id="img-item" src="img/racket.png" alt="테니스라켓사진"></span>
+                <span class="product-image"><img class="img-item" src="img/racket.png" alt="테니스라켓사진"></span>
                 <div class="explain-container">
                     <p class="item-title">BOOM MP L ALTERNATE 헤드테니스라켓</p>
                     <p class="name">이*욱</p>
@@ -62,7 +62,7 @@
             </article>
             <article class="container">
                 <input type="checkbox">
-                <span id="product-image"><img id="img-item" src="img/ball.png" alt="테니스라켓사진"></span>
+                <span class="product-image"><img class="img-item" src="img/ball.png" alt="테니스라켓사진"></span>
                 <div class="explain-container">
                     <p class="item-title">윌슨테니스볼 3캔</p>
                     <p class="name">이*욱</p>
@@ -96,6 +96,38 @@
             </a>
         </div>
     </footer>
+    <script>
+        // toggle-div 클릭 -> toggle 모양, nav-list 내려오기
+        const toggleDiv = document.getElementsByClassName('nav-toggle')[0]
+        const toggleI = toggleDiv.getElementsByTagName('i')[0]
+        const navList = document.getElementsByClassName('nav-list')[0]
+
+        toggleDiv.onclick = (event) => {
+            navList.classList.toggle('show-menu')
+
+            toggleI.classList.toggle('bi-list')
+            toggleI.classList.toggle('bi-x-lg')
+        }
+
+        var target = document.querySelectorAll('.btn_open');
+        var btnPopClose = document.querySelectorAll('.pop_wrap .btn_close');
+        var targetID;
+
+        // 팝업 열기
+        for (var i = 0; i < target.length; i++) {
+            target[i].addEventListener('click', function () {
+                targetID = this.getAttribute('href');
+                document.querySelector(targetID).style.display = 'block';
+            });
+        }
+
+        // 팝업 닫기
+        for (var j = 0; j < target.length; j++) {
+            btnPopClose[j].addEventListener('click', function () {
+                this.parentNode.parentNode.style.display = 'none';
+            });
+        }
+    </script>
 
 </body>
 
