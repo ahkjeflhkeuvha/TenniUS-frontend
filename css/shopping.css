@@ -90,12 +90,25 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 40px 10px;
+    padding: 0 3vw 10px;
     border-bottom: 2px solid black;
 }
 
 #shopping-cart {
     font-size: var(--h2-font-size);
+}
+
+#select-all {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 2px;
+    margin-right: 5vw;
+    margin-top: 4px;
+}
+
+#select-all input {
+    margin-top: 1px;
 }
 
 #menu button {
@@ -107,7 +120,7 @@ main {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
-    margin: 40px;
+    margin: 3vw;
 }
 
 .container {
@@ -147,7 +160,7 @@ main {
 .btn-container {
     display: flex;
     flex-direction: column;
-    width: 15%;
+    width: 16%;
     justify-content: center;
     row-gap: 10px;
     margin-left: auto;
@@ -221,7 +234,9 @@ footer {
         top: var(--nav-height);
     }
 
-    
+    .item-title, .price, .btn-container > button {
+        font-size: calc(var(--h2-font-size) - 4px);
+    }    
 
     footer {
         position: fixed;
