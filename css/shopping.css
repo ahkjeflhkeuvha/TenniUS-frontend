@@ -160,7 +160,7 @@ main {
 .btn-container {
     display: flex;
     flex-direction: column;
-    width: 16%;
+    width: 25vw;
     justify-content: center;
     row-gap: 10px;
     margin-left: auto;
@@ -235,8 +235,13 @@ footer {
     }
 
     .item-title, .price, .btn-container > button {
-        font-size: calc(var(--h2-font-size) - 4px);
+        /* font-size: calc(var(--h2-font-size) - 4px); */
+        font-size: 2vw;
     }    
+
+    .item-title {
+        word-break: keep-all;   
+    }
 
     footer {
         position: fixed;
@@ -293,12 +298,12 @@ footer {
     }
 
     .explain-container {
-        width: 45vw;
+        width: 44vw;
         row-gap: 0;
     }
 
     .item-title, .price, .btn-container > button {
-        font-size: calc(var(--h3-font-size) - 4px);
+        font-size: 1vw;
         word-break: keep-all;
     }   
 
