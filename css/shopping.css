@@ -284,12 +284,13 @@ footer {
 
     .container {
         flex-direction: row;
-        align-items: center; /* Align items vertically center */
+        align-items: center;
         flex-wrap: wrap;
+        position: relative;
     }
 
     .product-image {
-        margin-right: 16px; /* Add some space between image and text */
+        aspect-ratio: 2/3;
     }
 
     .img-item {
@@ -314,6 +315,9 @@ footer {
         width: 100%;
         align-items: flex-end;
         justify-content: flex-end;
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
     }
 
     .purchase-bnt {
