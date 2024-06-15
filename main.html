@@ -26,7 +26,7 @@
                 <li class="nav-item"><a href="shoes.html" class="nav-link">잡화</a></li>
             </ul>
 
-            <div class="nav-personal" id="search">
+            <div class="nav-personal" id="search" onclick="search()">
                 <i class="bi bi-search"></i>
             </div>
 
@@ -282,6 +282,16 @@
             btnPopClose[j].addEventListener('click', function () {
                 this.parentNode.parentNode.style.display = 'none';
             });
+        }
+
+        fetch("data.json")
+        .then((res) => res)
+        .then((obj) => search(obj))
+        .catch((error) => console.log(error))
+
+
+        function search(obj){
+            console.log(obj.map((a) => a.name))
         }
     </script>
 </body>
