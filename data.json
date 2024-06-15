@@ -1,0 +1,41 @@
+[
+    {
+        "name" : "라켓",
+        "category" : "rocket",
+        "image" : "item-1.png"
+    },
+    {
+        "name" : "라켓",
+        "category" : "rocket",
+        "image" : "item-2.jpg"
+    },
+    {
+        "name" : "라켓",
+        "category" : "rocket",
+        "image" : "item-3.jpg"
+    },{
+        "name" : "라켓",
+        "category" : "rocket",
+        "image" : "item-4.jpg"
+    },
+    {
+        "name" : "치마",
+        "category" : "clothes",
+        "image" : "item-5"
+    },
+    {
+        "name" : "신발",
+        "category" : "shoes",
+        "image" : "item-6"
+    },
+    {
+        "name" : "반팔",
+        "category" : "clothes",
+        "image" : "item-7"
+    },
+    {
+        "name" : "볼",
+        "category" : "ball",
+        "image" : "item-8"
+    }
+]
