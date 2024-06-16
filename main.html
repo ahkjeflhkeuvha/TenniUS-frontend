@@ -44,7 +44,7 @@
     <main>
         <div class="search-container">
             <input type="text" id="search-bar">
-            <i class="bi bi-search" onclick="search()"></i>
+            <i class="bi bi-search" onclick="search()" onkeydown="if(event.keyCode==13) javascript: search();"></i>
         </div>
         <section class="item-container">            
             <article class="items" id="article-1">
@@ -269,7 +269,6 @@
 
         const searchDiv = document.getElementById('search')
         const searchCon = document.getElementsByClassName('search-container')[0]
-        console.log(searchDiv)
 
         searchDiv.onclick = (event) => {
             searchCon.classList.toggle('show-search')
@@ -300,20 +299,25 @@
             });
         }
 
-        function search() {
-            // const explainDiv = document.getElementsByClassName('explain')
-            
+        function search(){
             const searchItem = document.getElementById('search-bar').value
             const titleList = document.getElementsByClassName('title')
+            let cnt = 0
             
             for(var i = 0; i<titleList.length; i++){
                 if(titleList[i].textContent.includes(searchItem)) {
                     document.getElementById(`article-${i+1}`).style.display = 'block'
+                    cnt++
                 }
                 else {
                     console.log(i)
                     document.getElementById(`article-${i+1}`).style.display = 'none'
                 }
+            }
+
+            if(cnt == 0) {
+                alert("찾으시는 제품이 없습니다.")
+                document.getElementById('search-bar').value = ""
             }
         }
     </script>
