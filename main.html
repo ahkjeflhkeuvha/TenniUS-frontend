@@ -26,7 +26,7 @@
                 <li class="nav-item"><a href="shoes.html" class="nav-link">잡화</a></li>
             </ul>
 
-            <div class="nav-personal" id="search" onclick="search()">
+            <div class="nav-personal" id="search">
                 <i class="bi bi-search"></i>
             </div>
 
@@ -42,11 +42,15 @@
 
     <!-- item container -->
     <main>
-        <section class="item-container">
+        <div class="search-container">
+            <input type="text" id="search-bar">
+            <i class="bi bi-search" onclick="search()" onkeydown="if(event.keyCode==13) javascript: search();"></i>
+        </div>
+        <section class="item-container">            
             <article class="items" id="article-1">
                 <a href="#pop_info_1" class="btn_open"><img src="img/item-1.png" alt=""></a>
                 <div class="explain">
-                    <h2 class="item">CLASSIC THUNDER G2<br>프린스 테니스 라켓 </h2>
+                    <h2 class="item title">CLASSIC THUNDER G2<br>프린스 테니스 라켓 </h2>
                     <h3 class="item">189,000원</h3>
                     <button class="btn cart-btn item"><a href="shopping.html">장바구니</a></button>
                 </div>
@@ -55,7 +59,7 @@
             <article class="items" id="article-2">
                 <a href="#pop_info_2" class="btn_open"><img src="img/item-2.jpg" alt=""></a>
                 <div class="explain">
-                    <h2 class="item">CLASSIC THUNDER G2<br>프린스 테니스 라켓 </h2>
+                    <h2 class="item title">CLASH 100L V2 롤랑가로스<br>윌슨 테니스 라켓 </h2>
                     <h3 class="item">189,000원</h3>
                     <button class="btn cart-btn item"><a href="shopping.html">장바구니</a></button>
                 </div>
@@ -64,25 +68,25 @@
             <article class="items" id="article-3">
                 <a href="#pop_info_3" class="btn_open"><img src="img/item-3.jpg" alt=""></a>
                 <div class="explain">
-                    <h2 class="item">CLASSIC THUNDER G2<br>프린스 테니스 라켓 </h2>
+                    <h2 class="item title">PURE AERO RAFA JUNIOR<br>바볼랏 주니어 라켓</h2>
                     <h3 class="item">189,000원</h3>
                     <button class="btn cart-btn item"><a href="shopping.html">장바구니</a></button>
                 </div>
             </article>
 
-            <article class="items" id="article-4">
+            <article class="items title" id="article-4">
                 <a href="#pop_info_4" class="btn_open"><img src="img/item-4.jpg" alt=""></a>
                 <div class="explain">
-                    <h2 class="item">CLASSIC THUNDER G2<br>프린스 테니스 라켓 </h2>
+                    <h2 class="item">BOOM MP L ALTERNATE<br>헤드테니스라켓 </h2>
                     <h3 class="item">189,000원</h3>
                     <button class="btn cart-btn item"><a href="shopping.html">장바구니</a></button>
                 </div>
             </article>
 
-            <article class="items" id="article-5">
+            <article class="items title" id="article-5">
                 <a href="#pop_info_5" class="btn_open"><img src="img/item-5.jpg" alt=""></a>
                 <div class="explain">
-                    <h2 class="item">CLASSIC THUNDER G2<br>프린스 테니스 라켓 </h2>
+                    <h2 class="item">게임 셋 매치 치마 M 사이즈</h2>
                     <h3 class="item">189,000원</h3>
                     <button class="btn cart-btn item"><a href="shopping.html">장바구니</a></button>
                 </div>
@@ -91,7 +95,7 @@
             <article class="items" id="article-6">
                 <a href="#pop_info_6" class="btn_open"><img src="img/item-6.jpg" alt=""></a>
                 <div class="explain">
-                    <h2 class="item">CLASSIC THUNDER G2<br>프린스 테니스 라켓 </h2>
+                    <h2 class="item title">요넥스 오트밀 멜란지 공용 반팔 티셔츠</h2>
                     <h3 class="item">189,000원</h3>
                     <button class="btn cart-btn item"><a href="shopping.html">장바구니</a></button>
                 </div>
@@ -100,7 +104,7 @@
             <article class="items" id="article-7">
                 <a href="#pop_info_7" class="btn_open"><img src="img/item-7.jpg" alt=""></a>
                 <div class="explain">
-                    <h2 class="item">CLASSIC THUNDER G2<br>프린스 테니스 라켓 </h2>
+                    <h2 class="item title">아식스 테니스화 235</h2>
                     <h3 class="item">189,000원</h3>
                     <button class="btn cart-btn item"><a href="shopping.html">장바구니</a></button>
                 </div>
@@ -109,7 +113,7 @@
             <article class="items" id="article-8">
                 <a href="#pop_info_8" class="btn_open"><img src="img/item-8.png" alt=""></a>
                 <div class="explain">
-                    <h2 class="item">CLASSIC THUNDER G2<br>프린스 테니스 라켓 </h2>
+                    <h2 class="item title">윌슨 테니스볼 3캔</h2>
                     <h3 class="item">189,000원</h3>
                     <button class="btn cart-btn item"><a href="shopping.html">장바구니</a></button>
                 </div>
@@ -231,10 +235,8 @@
 
     </main>
 
-
-
     <footer>
-        <div class="bottom-nav-personal">
+        <div class="bottom-nav-personal" id="footer-search">
             <i class="bi bi-search"></i>
             <p>검색</p>
         </div>
@@ -265,6 +267,19 @@
             toggleI.classList.toggle('bi-x-lg')
         }
 
+        const searchDiv = document.getElementById('search')
+        const searchCon = document.getElementsByClassName('search-container')[0]
+
+        searchDiv.onclick = (event) => {
+            searchCon.classList.toggle('show-search')
+        }
+
+        const footerSearchDiv = document.getElementById('footer-search')
+
+        footerSearchDiv.onclick = (event) => {
+            searchCon.classList.toggle('show-search')
+        }
+
         var target = document.querySelectorAll('.btn_open');
         var btnPopClose = document.querySelectorAll('.pop_wrap .btn_close');
         var targetID;
@@ -284,14 +299,26 @@
             });
         }
 
-        fetch("data.json")
-        .then((res) => res)
-        .then((obj) => search(obj))
-        .catch((error) => console.log(error))
+        function search(){
+            const searchItem = document.getElementById('search-bar').value
+            const titleList = document.getElementsByClassName('title')
+            let cnt = 0
+            
+            for(var i = 0; i<titleList.length; i++){
+                if(titleList[i].textContent.includes(searchItem)) {
+                    document.getElementById(`article-${i+1}`).style.display = 'block'
+                    cnt++
+                }
+                else {
+                    console.log(i)
+                    document.getElementById(`article-${i+1}`).style.display = 'none'
+                }
+            }
 
-
-        function search(obj){
-            console.log(obj.map((a) => a.name))
+            if(cnt == 0) {
+                alert("찾으시는 제품이 없습니다.")
+                document.getElementById('search-bar').value = ""
+            }
         }
     </script>
 </body>
