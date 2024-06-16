@@ -236,7 +236,7 @@
     </main>
 
     <footer>
-        <div class="bottom-nav-personal">
+        <div class="bottom-nav-personal" id="footer-search">
             <i class="bi bi-search"></i>
             <p>검색</p>
         </div>
@@ -272,6 +272,12 @@
         console.log(searchDiv)
 
         searchDiv.onclick = (event) => {
+            searchCon.classList.toggle('show-search')
+        }
+
+        const footerSearchDiv = document.getElementById('footer-search')
+
+        footerSearchDiv.onclick = (event) => {
             searchCon.classList.toggle('show-search')
         }
 
