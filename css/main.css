@@ -104,15 +104,31 @@ main>.item-container {
     
 }
 
-main .search-container {
+.search-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: calc(var(--nav-height) * -1);
+    position: relative;
+    top: -60px;
+    width: 100%;
+    transition: 0.4s all ease-in;
+}
+
+.search-container > input {
+    width: 50%;
+    height: 10%;
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    font-size: var(--normal-font-size);
+}
+
+.search-container > i {
+    font-size: var(--normal-font-size);
 }
 
 .show-search {
-    margin: 0;
+    top: 0;
 }
 
 .item-container #article-5, #article-6, #article-7, #article-8 {
