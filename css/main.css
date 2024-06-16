@@ -94,13 +94,25 @@ main {
     z-index: -1;
 }
 
+
 main>.item-container {
     width: 100%;
     position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
+}
 
+main .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(var(--nav-height) * -1);
+}
+
+.show-search {
+    margin: 0;
 }
 
 .item-container #article-5, #article-6, #article-7, #article-8 {

@@ -26,7 +26,7 @@
                 <li class="nav-item"><a href="shoes.html" class="nav-link">잡화</a></li>
             </ul>
 
-            <div class="nav-personal" id="search" onclick="search()">
+            <div class="nav-personal" id="search">
                 <i class="bi bi-search"></i>
             </div>
 
@@ -42,7 +42,11 @@
 
     <!-- item container -->
     <main>
-        <section class="item-container">
+        <div class="search-container">
+            <input type="text">
+            <i class="bi bi-search"></i>
+        </div>
+        <section class="item-container">            
             <article class="items" id="article-1">
                 <a href="#pop_info_1" class="btn_open"><img src="img/item-1.png" alt=""></a>
                 <div class="explain">
@@ -231,8 +235,6 @@
 
     </main>
 
-
-
     <footer>
         <div class="bottom-nav-personal">
             <i class="bi bi-search"></i>
@@ -265,6 +267,14 @@
             toggleI.classList.toggle('bi-x-lg')
         }
 
+        const searchDiv = document.getElementById('search')
+        const searchCon = document.getElementsByClassName('search-container')[0]
+        console.log(searchDiv)
+
+        searchDiv.onclick = (event) => {
+            searchCon.classList.toggle('show-search')
+        }
+
         var target = document.querySelectorAll('.btn_open');
         var btnPopClose = document.querySelectorAll('.pop_wrap .btn_close');
         var targetID;
@@ -282,16 +292,6 @@
             btnPopClose[j].addEventListener('click', function () {
                 this.parentNode.parentNode.style.display = 'none';
             });
-        }
-
-        fetch("data.json")
-        .then((res) => res)
-        .then((obj) => search(obj))
-        .catch((error) => console.log(error))
-
-
-        function search(obj){
-            console.log(obj.map((a) => a.name))
         }
     </script>
 </body>
