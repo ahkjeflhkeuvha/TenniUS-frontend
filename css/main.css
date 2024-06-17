@@ -121,6 +121,7 @@ main>.item-container {
     border-bottom: 1px solid black;
     padding: 10px;
     font-size: var(--normal-font-size);
+    outline: none;
 }
 
 .search-container > i {
@@ -137,6 +138,7 @@ main>.item-container {
 
 .items {
     padding: 16px 16px 0;
+    width: 22%;
 }
 
 .items> .explain > img {
@@ -208,17 +210,17 @@ footer {
     font-size: var(--normal-font-size);
 }
 
-.pop_inner>h2 {
+.pop_inner > h2 {
     font-size: var(--h2-font-size);
     margin-top: var(--small-margin);
 }
 
-.pop_inner>h3 {
+.pop_inner > h3 {
     font-size: var(--h3-font-size);
     margin-top: var(--small-margin);
 }
 
-.pop_inner>p {
+.pop_inner > p {
     font-size: var(--normal-font-size);
     margin-top: var(--small-margin);
 }
@@ -336,7 +338,8 @@ footer {
         width: 100%;
     }
     .items img {
-        width: 100%;
+        width: 150px;
+        aspect-ratio: 1/1;
     }
     .btn_open {
         width: 150px;
