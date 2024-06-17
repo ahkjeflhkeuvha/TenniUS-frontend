@@ -23,25 +23,6 @@ footerSearchDiv.onclick = (event) => {
     searchCon.classList.toggle('show-search')
 }
 
-var target = document.querySelectorAll('.btn_open');
-var btnPopClose = document.querySelectorAll('.pop_wrap .btn_close');
-var targetID;
-
-// 팝업 열기
-for (var i = 0; i < target.length; i++) {
-    target[i].addEventListener('click', function () {
-        targetID = this.getAttribute('href');
-        document.querySelector(targetID).style.display = 'block';
-    });
-}
-
-// 팝업 닫기
-for (var j = 0; j < target.length; j++) {
-    btnPopClose[j].addEventListener('click', function () {
-        this.parentNode.parentNode.style.display = 'none';
-    });
-}
-
 const fileName = "data.json"
 
 fetch(fileName)
@@ -88,8 +69,6 @@ function showData(data) {
     itemContainer.innerHTML = itemContainerString
     const mainContainer = document.getElementsByClassName('popup-container')[0]
     mainContainer.innerHTML = popupContainerString
-
-    console.log(popupContainerString)
 }
 
 function search(){
@@ -106,4 +85,24 @@ function search(){
             document.getElementById(`article-${i+1}`).style.display = 'none'
         }
     }
+}
+
+var target = document.querySelectorAll('.btn_open');
+var btnPopClose = document.querySelectorAll('.pop_wrap .btn_close');
+var targetID;
+
+console.log(target, btnPopClose)
+
+// 팝업 열기
+for (var i = 0; i < target.length; i++) {
+    target[i].addEventListener('click', function () {
+        console.log(this.getAttribute('href'))
+    });
+}
+
+// 팝업 닫기
+for (var j = 0; j < target.length; j++) {
+    btnPopClose[j].addEventListener('click', function () {
+        this.parentNode.parentNode.style.display = 'none';
+    });
 }
