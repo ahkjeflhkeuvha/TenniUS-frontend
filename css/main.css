@@ -138,6 +138,7 @@ main>.item-container {
 
 .items {
     padding: 16px 16px 0;
+    width: 23%;
 }
 
 .items> .explain > img {
