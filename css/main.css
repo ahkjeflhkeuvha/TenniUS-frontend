@@ -121,6 +121,7 @@ main>.item-container {
     border-bottom: 1px solid black;
     padding: 10px;
     font-size: var(--normal-font-size);
+    outline: none;
 }
 
 .search-container > i {
@@ -336,7 +337,8 @@ footer {
         width: 100%;
     }
     .items img {
-        width: 100%;
+        width: 150px;
+        aspect-ratio: 1/1;
     }
     .btn_open {
         width: 150px;
