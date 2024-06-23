@@ -13,18 +13,16 @@ toggleDiv.onclick = (event) => {
 const inputButton = document.getElementsByClassName('product-class')
 let clickedCartegory = 0
 
-function clickInputButton(n){  
-    for(var i = 0; i<inputButton.length; i++){
+function clickInputButton(n) {
+    for (var i = 0; i < inputButton.length; i++) {
         inputButton[i].style.backgroundColor = '#FAFAFC'
     }
-    
+
     inputButton[n].style.backgroundColor = '#CCFF00'
     clickedCartegory = n
 }
 
-let fileName = "data.json"
-
-function uploadJson(){
+function uploadJson() {
     const uploadTitle = document.getElementById('product-name')
     const uploadCartegory = document.getElementsByClassName('product-class')[clickedCartegory]
     const uploadExplain = document.getElementById('product-explain')
@@ -32,16 +30,20 @@ function uploadJson(){
 
     let uploadCartegoryEng = ""
 
-    if(uploadCartegory.value == "라켓") uploadCartegoryEng = "rocket"
-    else if(uploadCartegory.value == "볼") uploadCartegoryEng = "ball"
-    else if(uploadCartegory.value = "의류") uploadCartegoryEng = "clothes"
+    if (uploadCartegory.value == "라켓") uploadCartegoryEng = "rocket"
+    else if (uploadCartegory.value == "볼") uploadCartegoryEng = "ball"
+    else if (uploadCartegory.value = "의류") uploadCartegoryEng = "clothes"
     else uploadCartegoryEng = "shoes"
 
     let jsonData = {
-        "name" : uploadTitle.value,
-        "category" : uploadCartegoryEng,
-        "image" : uploadImage.value.split('\\')[2],
-        "description" : uploadExplain.value
+        "name": uploadTitle.value,
+        "category": uploadCartegoryEng,
+        "image": uploadImage.value.split('\\')[2],
+        "price": "미정",
+        "description": uploadExplain.value
     }
 
+    localStorage.setItem('uploadItem', JSON.stringify(jsonData))
+    window.location.href = "./main.html"
+    // console.log(localStorage.getItem('uploadItem'))
 }
