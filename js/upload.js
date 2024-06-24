@@ -37,6 +37,9 @@ function uploadJson(){
     else if(uploadCartegory.value = "의류") uploadCartegoryEng = "clothes"
     else uploadCartegoryEng = "shoes"
 
+    let sliceUploadTitle
+    sliceUploadTitle = uploadTitle.value.padEnd(10, '     ').slice(0, 30)
+
     let jsonData = {
         "name" : uploadTitle.value,
         "category" : uploadCartegoryEng,
