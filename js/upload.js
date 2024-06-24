@@ -36,7 +36,7 @@ function uploadJson() {
     else uploadCartegoryEng = "shoes"
 
     let sliceUploadTitle
-    if(uploadTitle.value.length > 20) sliceUploadTitle = uploadTitle.value.substring(0, 25)
+    sliceUploadTitle = uploadTitle.value.padEnd(10, '     ').slice(0, 30)
 
     let jsonData = {
         "name": sliceUploadTitle,
