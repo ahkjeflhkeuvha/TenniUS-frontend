@@ -12,10 +12,16 @@ function getData() {
 
 getData();
 
+
 function setData(data) {
-    allData = data
-    if(localStorage.getItem('uploadItem') != null) allData += JSON.parse(localStorage.getItem('uploadItem'))
-    showData(data);
+    allData = data;
+    const localStorageData = localStorage.getItem('uploadItem');
+    console.log(localStorageData)
+    if (localStorageData) {
+        const parsedLocalStorageData = JSON.parse(localStorageData);
+        allData = allData.concat(parsedLocalStorageData);
+    }
+    showData(allData);
 }
 
 function showData(data) {
@@ -38,7 +44,7 @@ function showData(data) {
         <div class="pop_inner">
         <img src="img/${element.image}" alt="">
         <h2>${element.name}</h2>
-        <h3>189,000원</h3>
+        <h3>${element.price}</h3>
         <p>${element.description}</p>
         <button type="button" class="btn_close">닫기</button>
         </div>

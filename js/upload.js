@@ -35,6 +35,7 @@ function uploadJson() {
     else if (uploadCartegory.value = "의류") uploadCartegoryEng = "clothes"
     else uploadCartegoryEng = "shoes"
 
+    console.log(uploadImage.value.split('\\')[2])
     let jsonData = {
         "name": uploadTitle.value,
         "category": uploadCartegoryEng,
