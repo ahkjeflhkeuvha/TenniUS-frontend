@@ -315,7 +315,7 @@ footer {
 
     .items {
         width:290px;
-        height: 350px;
+        height: 400px;
         display: flex;
         flex-direction: column;
     }
