@@ -94,6 +94,20 @@ main {
     z-index: -1;
 }
 
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
 
 main>.item-container {
     width: 100%;
@@ -132,8 +146,8 @@ main>.item-container {
     top: 0;
 }
 
-.item-container #article-5, #article-6, #article-7, #article-8 {
-    padding-bottom: 50px;
+.items:last-child {
+    margin-bottom: 50px;
 }
 
 .items {
@@ -141,9 +155,16 @@ main>.item-container {
     width: 22%;
 }
 
+.items img {
+    max-width: 100%;
+    width: 23vw;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+
 .items> .explain > img {
     justify-content: center;
-    width: 100%;
+    max-width: 100%;
 }
 
 .items > .explain > p {
