@@ -94,6 +94,20 @@ main {
     z-index: -1;
 }
 
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
 
 main>.item-container {
     width: 100%;
@@ -133,12 +147,16 @@ main>.item-container {
 }
 
 .items:last-child {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .items {
     padding: 16px 16px 0;
     width: 22%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensures items start at the top */
 }
 
 .items img {
@@ -146,6 +164,13 @@ main>.item-container {
     width: 23vw;
     aspect-ratio: 1 / 1;
     object-fit: contain;
+}
+
+.items > .explain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures the explain content fills available space */
+    flex-grow: 1; /* Ensures explain takes up all available space */
 }
 
 .items> .explain > img {
@@ -157,8 +182,15 @@ main>.item-container {
     display: none;
 }
 
+.items > .explain > h2, 
+.items > .explain > h3 {
+    margin-top: auto; /* Pushes the h2 and h3 to the bottom */
+}
+
+
 .item {
     margin-top: 12px;
+    margin-bottom: auto; /* Pushes the cart button to the bottom */
 }
 
 .cart-btn {
@@ -169,6 +201,7 @@ main>.item-container {
     border: 4px solid var(--third-color);
     background-color: var(--first-color);
     font-size: var(--normal-font-size);
+    margin-top: auto; /* Pushes the cart button to the bottom */
 }
 
 .cart-btn>a {
@@ -282,8 +315,9 @@ footer {
 
     .items {
         width:290px;
-        height: fit-content;
-        justify-content: center;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
     }
 
     .items > .explain > img {
