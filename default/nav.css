@@ -167,9 +167,3 @@ footer {
         font-size: var(--smaller-font-size);
     }
 }
-
-@media screen and (max-width: 391px) {
-    footer {
-        top: calc(844px - 43px);
-    }
-}
