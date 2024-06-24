@@ -94,6 +94,20 @@ main {
     z-index: -1;
 }
 
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
 
 main>.item-container {
     width: 100%;
