@@ -22,8 +22,6 @@ function clickInputButton(n){
     clickedCartegory = n
 }
 
-let fileName = "data.json"
-
 function uploadJson(){
     const uploadTitle = document.getElementById('product-name')
     const uploadCartegory = document.getElementsByClassName('product-class')[clickedCartegory]
@@ -37,14 +35,17 @@ function uploadJson(){
     else if(uploadCartegory.value = "의류") uploadCartegoryEng = "clothes"
     else uploadCartegoryEng = "shoes"
 
-    let sliceUploadTitle
-    sliceUploadTitle = uploadTitle.value.padEnd(10, '     ').slice(0, 30)
+    let sliceUploadTitle = uploadTitle.value.padEnd(10, '     ').slice(0, 30)
 
     let jsonData = {
         "name" : uploadTitle.value,
         "category" : uploadCartegoryEng,
+        "price" : "미정",
         "image" : uploadImage.value.split('\\')[2],
         "description" : uploadExplain.value
     }
+
+    localStorage.setItem('uploadItem', JSON.stringify(jsonData))
+    window.location.href = "./main.html"
 
 }
