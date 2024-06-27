@@ -94,20 +94,6 @@ main {
     z-index: -1;
 }
 
-article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-article img {
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-}
-
 
 main>.item-container {
     width: 100%;
@@ -146,51 +132,26 @@ main>.item-container {
     top: 0;
 }
 
-.items:last-child {
-    margin-bottom: 100px;
+.item-container #article-5, #article-6, #article-7, #article-8 {
+    padding-bottom: 50px;
 }
 
 .items {
     padding: 16px 16px 0;
     width: 22%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Ensures items start at the top */
 }
 
 .items img {
-    max-width: 100%;
-    width: 23vw;
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
-}
-
-.items > .explain {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Ensures the explain content fills available space */
-    flex-grow: 1; /* Ensures explain takes up all available space */
-}
-
-.items> .explain > img {
-    justify-content: center;
-    max-width: 100%;
+    width: 280px;
+    height: 280px;
 }
 
 .items > .explain > p {
     display: none;
 }
 
-.items > .explain > h2, 
-.items > .explain > h3 {
-    margin-top: auto; /* Pushes the h2 and h3 to the bottom */
-}
-
-
 .item {
     margin-top: 12px;
-    margin-bottom: auto; /* Pushes the cart button to the bottom */
 }
 
 .cart-btn {
@@ -201,7 +162,6 @@ main>.item-container {
     border: 4px solid var(--third-color);
     background-color: var(--first-color);
     font-size: var(--normal-font-size);
-    margin-top: auto; /* Pushes the cart button to the bottom */
 }
 
 .cart-btn>a {
@@ -315,9 +275,8 @@ footer {
 
     .items {
         width:290px;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
     }
 
     .items > .explain > img {
@@ -379,8 +338,14 @@ footer {
         width: 100%;
     }
     .items img {
-        width: 150px;
+        width: 105px;
         aspect-ratio: 1/1;
+    }
+    .explain {
+        width: 255px;
+    }
+    .items:last-child {
+        padding-bottom: 50px;
     }
     .btn_open {
         width: 150px;
