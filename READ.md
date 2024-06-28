@@ -51,9 +51,9 @@
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Round%20Pushpin.png" alt="Round Pushpin" width="15" height="15" /> 개발
 </summary>
   <br>
-     2305 오지은 <br> <a href="https://www.github.com/ahkjeflhkeuvha/"> <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=Github&logoColor=white" /></a>
+     2305 오지은   <a href="https://www.github.com/ahkjeflhkeuvha/"> <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=Github&logoColor=white" /></a>
   <br>
-   2310 황유진 <br>  <a href="https://github.com/hofkj/"> <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=Github&logoColor=white" /></a>
+     2310 황유진   <a href="https://github.com/hofkj/"> <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=Github&logoColor=white" /></a>
    <br><br>
 </details>
 <details>
