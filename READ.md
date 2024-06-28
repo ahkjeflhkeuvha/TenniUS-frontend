@@ -1,4 +1,4 @@
-![image](https://github.com/ahkjeflhkeuvha/TenniUS-frontend/assets/128341152/f224634c-fdc7-4676-ba4b-9ebba463e153)**TenniUS 🎾**
+**TenniUS 🎾**
 ---
 <br>
 
@@ -21,7 +21,7 @@
   - 팝업 기능
 
     
-![image](![image](https://github.com/ahkjeflhkeuvha/TenniUS-frontend/assets/128341152/d1c138b8-abed-4036-9dde-ee6a37ad7653)
+(![image](https://github.com/ahkjeflhkeuvha/TenniUS-frontend/assets/128341152/d1c138b8-abed-4036-9dde-ee6a37ad7653))
 
 
   *- 원하는 제품의 상세한 설명을 팝업 기능을 통해 볼 수 있습니다.*
@@ -30,7 +30,7 @@
 
   - 제품 업로드 기능
 
-![image](![image](https://github.com/ahkjeflhkeuvha/TenniUS-frontend/assets/128341152/c9afcb4d-b1c2-4527-aab3-c8df587e9185)
+(![image](https://github.com/ahkjeflhkeuvha/TenniUS-frontend/assets/128341152/c9afcb4d-b1c2-4527-aab3-c8df587e9185))
 
 
   *- 판매하고자 하는 제품을 판매할 수 있습니다.*
@@ -39,7 +39,7 @@
 
   - 장바구니 기능
 
-![image](![image](https://github.com/ahkjeflhkeuvha/TenniUS-frontend/assets/128341152/9ebf7cee-2926-40a0-977f-ac17d3174ffb)
+(![image](https://github.com/ahkjeflhkeuvha/TenniUS-frontend/assets/128341152/9ebf7cee-2926-40a0-977f-ac17d3174ffb)
 
 
   *- 구매하기 위해 넣어둔 제품들을 볼 수 있습니다.*
